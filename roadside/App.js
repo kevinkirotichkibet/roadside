@@ -1,22 +1,17 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-undef */
-/* eslint-disable react/jsx-no-undef */
+
 import React from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 // import { OriginContextProvider, DestinationContextProvider } from './src/contexts/contexts';
 // import RoootNavigator from './src/navigations/RootNavigator';
 import { NavigationContainer } from '@react-navigation/native';
-import { colors } from 'react-native-elements';
-import { parameters } from './src/global/styles';
+// import { colors } from 'react-native-elements';
+// import {  } from './src/global/styles';
 import { ScreenWidth } from 'react-native-elements/dist/helpers';
+import { colors, parameters } from './src/global/styles';
 const App = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Welcome' }} />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+  return <View style={styles.container}>new view</View>;
 };
 
 export default App;
@@ -53,7 +48,7 @@ const styles = StyleSheet.create({
   },
   button1Text: { color: colors.white, fontSize: 17, marginTop: -2 },
   card: { alignItems: 'center', margin: ScreenWidth / 22 },
-  view2: { marginBottom: 5, borderRadius: 20, backgroundColor: colors.grey5 },
+  view2: { marginBottom: 5, borderRadius: 20, backgroundColor: colors.grey6 },
   title: { color: colors.black, fontSize: 16 },
   view3: {
     flexDirection: 'row',
@@ -90,7 +85,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   view7: {
-    backgroundColor: colors.grey5,
+    backgroundColor: colors.grey6,
     height: 40,
     width: 40,
     borderRadius: 20,

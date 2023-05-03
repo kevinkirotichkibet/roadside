@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { getStatusBarHeight } from 'react-native-status-bar-height';
+// import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 // 44 - on iPhoneX
 // 20 - on iOS device
@@ -34,7 +34,7 @@ export const colors = {
 };
 
 export const parameters = {
-  statusBarHeight: getStatusBarHeight(),
+  // statusBarHeight: getStatusBarHeight(),
   headerHeight: 70,
 
   styledButton: {
